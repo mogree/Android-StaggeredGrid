@@ -1,9 +1,5 @@
 apply plugin: 'com.android.library'
 
-dependencies {
-    compile 'com.android.support:support-v4:19.1.+'
-}
-
 version = VERSION_NAME
 group = GROUP
 
@@ -20,4 +16,8 @@ android {
     }
 }
 
-apply from: 'https://raw.githubusercontent.com/denizmveli/gradle-mvn-push/master/gradle-mvn-push.gradle'
+dependencies {
+	compile 'com.android.support:support-v4:21.0.0'
+}
+
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
